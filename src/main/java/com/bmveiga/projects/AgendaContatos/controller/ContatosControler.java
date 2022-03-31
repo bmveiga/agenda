@@ -70,9 +70,4 @@ public class ContatosControler {
 		return ResponseEntity.ok().body(obj);
 	}
 	
-	@GetMapping(value = "/pesquisartelefone/{nome}")
-	public ResponseEntity<List<Contato>> findByPhone(@PathVariable String telefone){
-		List<Contato> obj = service.findByPhone(telefone);
-		return ResponseEntity.ok().body(obj);
-	}
 }
